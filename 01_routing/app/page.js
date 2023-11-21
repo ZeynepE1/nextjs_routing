@@ -10,6 +10,19 @@ export default function Home() {
     <br />
     <br />
     <Link href='/docs/post-2' >Post-2</Link>
+    <br />
+    <br />
+    {/* https://nextjs.org/docs/app/api-reference/components/link */}
+    <Link
+      className='test'
+      href={{
+        pathname: '/aboutUs',
+        query: {
+          name: 'Next.js',
+          surname: 'ff'
+        }
+      }}
+    >Hakkımızda obje ile</Link>
   </div>)
 
 }
